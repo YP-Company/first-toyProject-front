@@ -1,3 +1,4 @@
+import BoardCard from "@/components/board/BoardCard";
 import { connectDB } from "@/util/database";
 
 export default async function Home() {
@@ -7,9 +8,11 @@ export default async function Home() {
 
 	return (
 		<main>
-			{result.map((i: any, index: any) => {
-				return <span key={index}>{result[index].title}</span>;
-			})}
+			<ul className="grid grid-cols-1 md:grid-cols-4 lg-grid-cols-5 gap-4 p-4">
+				{result.map((item: any, index: any) => (
+					<BoardCard board={item} key={index} />
+				))}
+			</ul>
 		</main>
 	);
 }
