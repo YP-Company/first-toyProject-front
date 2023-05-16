@@ -1,4 +1,5 @@
 import { getPost } from "@/api/postDetail";
+import { redirect } from "next/navigation";
 import React from "react";
 
 interface Props {
@@ -11,5 +12,9 @@ export default async function postDetail({ params }: Props) {
 	console.log(params.slug[0]);
 	const post = await getPost(params.slug[0]);
 
-	return <div>postDetail : {post && post.title}</div>;
+	if (post?._id === undefined) {
+		redirect("/");
+	}
+
+	return <div>postDetail : {post.title}</div>;
 }
