@@ -9,7 +9,7 @@ export default async function Home() {
 	return (
 		<main>
 			<ul className="grid grid-cols-1 md:grid-cols-4 lg-grid-cols-5 gap-4 p-4">
-				{result.map((item: any, index: any) => (
+				{result.map((item: any, index: number) => (
 					<BoardCard board={item} key={index} />
 				))}
 			</ul>
