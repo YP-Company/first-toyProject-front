@@ -45,7 +45,7 @@ export default function Form() {
 				<Button text={"Login"} />
 			</form>
 			<span className="opacity-40 cursor-pointer">
-				Young Potato 가입하러 가기
+				Memoji 가입하러 가기
 			</span>
 		</div>
 	);

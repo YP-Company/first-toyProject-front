@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
-// import banner from "../../public/images/banner.png";
 import write from "../../public/images/write.gif";
 
 export default function Banner() {
@@ -17,7 +15,7 @@ export default function Banner() {
 					{" "}
 					당신의 생각이 궁금해요.{" "}
 				</span>
-				<span className="text-brand text-2xl ">
+				<span className="text-brand text-2xl">
 					&#123; &#39;Memoji&#39; &#125;
 				</span>
 				<span className="text-xl opacity-40"> 에서 공유 해보세요</span>
