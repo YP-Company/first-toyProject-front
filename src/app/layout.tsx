@@ -4,8 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
-	title: "Welcome! Young Potato",
-	description: "환영합니다! Young Potato 입니다.",
+	title: "Welcome! Memoji",
+	description: "환영합니다! Memoji 입니다.",
 };
 
 export default function RootLayout({
