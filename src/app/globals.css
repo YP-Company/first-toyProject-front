@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 html {
-	@apply flex flex-col items-center;
+    @apply flex flex-col items-center;
 }
 
 body {
-	@apply w-full max-w-screen-xl p-4;
+    @apply w-full max-w-screen-xl p-4;
 }
 
 input {
-	@apply p-4 border border-gray-300 w-96  rounded-md my-1;
+    @apply p-4 border border-gray-300 w-96  rounded-md my-1;
 }
