@@ -1,4 +1,4 @@
-import Form from "@/components/Form";
+import Form from "@/components/login/Form";
 import React from "react";
 
 export default function login() {
