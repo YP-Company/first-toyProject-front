@@ -4,6 +4,7 @@ import { Karla } from "next/font/google";
 
 // component
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
 	title: "Welcome! Memoji",
@@ -22,6 +23,7 @@ export default function RootLayout({
 			<body className="bg-main">
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
