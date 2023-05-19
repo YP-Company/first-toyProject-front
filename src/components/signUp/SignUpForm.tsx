@@ -48,6 +48,9 @@ export default function SignUpForm() {
 
 	return (
 		<div className="flex flex-col items-center">
+			<h3 className="text-brand text-lg">
+				&#123; 모든 항목은 필수 입니다. &#125;
+			</h3>
 			<form className="flex flex-col m-4" onSubmit={handleSubmit}>
 				<input
 					type="text"
