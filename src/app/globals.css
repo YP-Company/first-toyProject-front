@@ -13,3 +13,8 @@ body {
 input {
     @apply p-4 border border-gray-300 w-96  rounded-md my-1;
 }
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
