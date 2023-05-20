@@ -20,7 +20,7 @@ export default function Navbar() {
             openModal({
                 isOpen: true,
                 title: "로그인 시 확인 가능합니다.",
-                content: "로그인 하러 가기",
+                content: "Login",
                 move: () => handleModal(),
             })
         );
@@ -33,7 +33,12 @@ export default function Navbar() {
             </Link>
             <nav className="flex items-center gap-4 font-semibold text-xl">
                 <Link href="/login">Login</Link>
-                <span onClick={() => openModalWithNavigation()}>profile</span>
+                <span
+                    className="cursor-pointer"
+                    onClick={() => openModalWithNavigation()}
+                >
+                    profile
+                </span>
             </nav>
         </header>
     );

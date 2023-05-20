@@ -58,15 +58,22 @@ export default function Modal() {
             style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 999 }}
         >
             {isOpen && (
-                <div ref={modalRef} className="bg-gray-300 p-4 rounded">
+                <div ref={modalRef} className="bg-gray-300 p-4 rounded w-64 ">
                     <p className="text-center">{title}</p>
-                    <button
-                        className="block mx-auto mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                        onClick={handleCloseModal}
-                    >
-                        Close
-                    </button>
-                    <span onClick={move}>{content}</span>
+                    <div className="flex items-center justify-center">
+                        <button
+                            className="block mx-auto mt-4 px-4 py-2 bg-red-400 text-white rounded hover:bg-red-500"
+                            onClick={handleCloseModal}
+                        >
+                            Close
+                        </button>
+                        <button
+                            className="block mx-auto mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                            onClick={move}
+                        >
+                            {content}
+                        </button>
+                    </div>
                 </div>
             )}
         </div>
