@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={karla.className}>
-            <body className="bg-main">
+            <body className="bg-main" suppressHydrationWarning={true}>
                 <Providers>
                     <Modal />
                     <Navbar />
