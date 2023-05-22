@@ -53,14 +53,14 @@ export default function Modal() {
         <div
             id="modal"
             className={`fixed top-0 left-0 w-full h-full flex items-center justify-center ${
-                isOpen ? "visible" : "invisible"
-            }`}
+                isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+            } transition-opacity duration-300`}
             style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", zIndex: 999 }}
         >
             {isOpen && (
                 <div
                     ref={modalRef}
-                    className="bg-gray-300 p-4 rounded w-80 h-48 flex flex-col justify-center"
+                    className="bg-gray-300 p-4 rounded w-80 h-48 flex flex-col justify-center transition-transform duration-300"
                 >
                     <p className="text-center mb-4">{title}</p>
                     <div className="flex items-center justify-center">
